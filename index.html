@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Beatmaker</title>
+  </head>
+  <body>
+  <div class="heroTitle">BEAT MAKER</div>
+    <div class="sequencer">
+      <div class="sequencer__row">
+        <div class="sequencer__controls">
+          <h1 class="sequencer__title">
+            Kick
+          </h1>
+          <div class="sequencer__btnGroup">
+            <select name="kickSelect" class="sequencer__select">
+              <option value="./sounds/kick-classic.wav">Classic Kick</option>
+              <option value="./sounds/kick-808.wav">808 Kick</option>
+              <option value="./sounds/kick-heavy.wav">Kick Heavy</option>
+              <option value="./sounds/kick-softy.wav">Kick Softy</option>
+            </select>
+            <button data-track="0" class="sequencer__mute">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+          </div>
+        </div>
+        <div class="sequencer__pads sequencer__pads_kick">
+          <div class="sequencer__pad b0"></div>
+          <div class="sequencer__pad b1"></div>
+          <div class="sequencer__pad b2"></div>
+          <div class="sequencer__pad b3"></div>
+          <div class="sequencer__pad b4"></div>
+          <div class="sequencer__pad b5"></div>
+          <div class="sequencer__pad b6"></div>
+          <div class="sequencer__pad b7"></div>
+        </div>
+      </div>
+
+      <div class="sequencer__row">
+        <div class="sequencer__controls">
+          <h1 class="sequencer__title">
+            Snare
+          </h1>
+          <div class="sequencer__btnGroup">
+            <select name="snareSelect" class="sequencer__select">
+              <option value="./sounds/snare-acoustic01.wav">Classic Snare</option>
+              <option value="./sounds/snare-808.wav">808 Snare</option>
+              <option value="./sounds/snare-vinyl02.wav">Snare Vinyl</option>
+            </select>
+            <button data-track="1" class="sequencer__mute">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+          </div>
+        </div>
+        <div class="sequencer__pads sequencer__pads_snare">
+          <div class="sequencer__pad b0"></div>
+          <div class="sequencer__pad b1"></div>
+          <div class="sequencer__pad b2"></div>
+          <div class="sequencer__pad b3"></div>
+          <div class="sequencer__pad b4"></div>
+          <div class="sequencer__pad b5"></div>
+          <div class="sequencer__pad b6"></div>
+          <div class="sequencer__pad b7"></div>
+        </div>
+      </div>
+
+      <div class="sequencer__row">
+        <div class="sequencer__controls">
+          <h1 class="sequencer__title">
+            Hihat
+          </h1>
+          <div class="sequencer__btnGroup">
+            <select name="hihatSelect" class="sequencer__select">
+              <option value="./sounds/hihat-acoustic01.wav">Hihat Acoustic</option>
+              <option value="./sounds/hihat-808.wav">808 Hihat</option>
+            </select>
+            <button data-track="2" class="sequencer__mute">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+          </div>
+        </div>
+        <div class="sequencer__pads sequencer__pads_hihat">
+          <div class="sequencer__pad b0"></div>
+          <div class="sequencer__pad b1"></div>
+          <div class="sequencer__pad b2"></div>
+          <div class="sequencer__pad b3"></div>
+          <div class="sequencer__pad b4"></div>
+          <div class="sequencer__pad b5"></div>
+          <div class="sequencer__pad b6"></div>
+          <div class="sequencer__pad b7"></div>
+        </div>
+      </div>
+
+      <button class="play">Play</button>
+
+      <div class="tempo">
+        <input
+          type="range"
+          class="tempo__slider"
+          max="300"
+          min="20"
+          value="150"
+        />
+        <p class="tempo__txt">Tempo: <span class="tempo__number">150</span></p>
+      </div>
+    </div>
+
+    <audio class="kickSound" src="./sounds/kick-classic.wav"></audio>
+    <audio class="snareSound" src="./sounds/snare-acoustic01.wav"></audio>
+    <audio class="hihatSound" src="./sounds/hihat-acoustic01.wav"></audio>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
