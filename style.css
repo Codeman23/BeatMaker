@@ -17,34 +17,6 @@ svg {
   pointer-events: none;
 }
 
-/*.kick-pad,*/
-/*.snare-pad,*/
-/*.hihat-pad {*/
-  /*width: 5rem;*/
-  /*height: 5rem;*/
-  /*margin: 1rem 0.5rem;*/
-  /*cursor: pointer;*/
-/*}*/
-/*.kick-pad {*/
-  /*background: #A0D3E0;*/
-/*}*/
-/*.snare-pad {*/
-  /*background: #E0A0D0;*/
-/*}*/
-/*.hihat-pad {*/
-  /*background: #E0C2A0;*/
-/*}*/
-
-/*.kick-pad.active {*/
-  /*background: #156EF3;*/
-/*}*/
-/*.snare-pad.active {*/
-  /*background: #DA3AB2;*/
-/*}*/
-/*.hihat-pad.active {*/
-  /*background: #F1833B;*/
-/*}*/
-
 .sequencer {
   width: 100%;
   max-width: 960px;
@@ -76,12 +48,12 @@ svg {
 }
 
 .sequencer__title {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: white;
 }
 
 .sequencer__mute {
-  padding: .3rem .4rem;
+  padding: 0.3rem 0.4rem;
   border: none;
   background: rgb(0, 0, 0);
   color: white;
@@ -97,7 +69,7 @@ svg {
 }
 
 .sequencer__select {
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
   border-color: transparent;
 }
@@ -114,23 +86,23 @@ svg {
   border-radius: 5px;
 }
 
-.sequencer__pads_kick .sequencer__pad{
+.sequencer__pads_kick .sequencer__pad {
   background-color: #57b6e0;
 }
 
 .sequencer__pads_kick .sequencer__pad.active {
-  background-color: #156EF3;
+  background-color: #156ef3;
 }
 
-.sequencer__pads_snare .sequencer__pad{
+.sequencer__pads_snare .sequencer__pad {
   background-color: #dd91e0;
 }
 
 .sequencer__pads_snare .sequencer__pad.active {
-  background-color: #DA3AB2;
+  background-color: #da3ab2;
 }
 
-.sequencer__pads_hihat .sequencer__pad{
+.sequencer__pads_hihat .sequencer__pad {
   background-color: #e0d288;
 }
 
@@ -148,7 +120,7 @@ svg {
   cursor: pointer;
   margin: 20px 0;
   text-transform: uppercase;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .play:hover {
